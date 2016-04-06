@@ -1,0 +1,25 @@
+{
+  "name": "npm-file-structure",
+  "version": "1.0.0",
+  "description": "Northcoders project ",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha spec/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/northcoders-chris/npm-file-structure.git"
+  },
+  "author": "Chris Hill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/northcoders-chris/npm-file-structure/issues"
+  },
+  "homepage": "https://github.com/northcoders-chris/npm-file-structure#readme",
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "moment": "^2.12.0"
+  }
+}
