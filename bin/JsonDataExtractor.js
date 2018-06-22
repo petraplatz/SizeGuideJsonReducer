@@ -15,17 +15,18 @@ if (config.JSON && config.JSON.folderpath) {
         // folder configurato
         const folder = config.JSON.folderpath;
 
-        if (helper.isDirectory(folder));
+        if (helper.isDirectory(folder)) {
 
-        console.log(colors.success(`\n Found a JSON ${folder}  configured !`));
+            console.log(colors.success(`\n Found a JSON ${folder}  configured !`));
 
-        var JSONfiles = helper.getJSONFiles(folder);
+            var JSONfiles = helper.getJSONFiles(folder);
 
-        // Go
-        jsonExtracted.analyze(JSONfiles);
-    } else {
-        //fs.mkdirSync(directory);
-        console.log(colors.error(`\n config.json > checking folder path: ${folder}`));
-        console.log(colors.error(`\nATTENTION! Folder path is not valid or is not configurated in config.json!`));
+            // Go
+            jsonExtracted.analyze(JSONfiles);
+        } else {
+            //fs.mkdirSync(directory);
+            console.log(colors.error(`\n config.json > checking folder path: "${folder}"`));
+            console.log(colors.error(`\n ATTENTION! Folder path is not valid or is not configurated in config.json!`));
+        }
     }
 }
