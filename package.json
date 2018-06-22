@@ -1,25 +1,36 @@
 {
-  "name": "npm-file-structure",
+  "name": "SizeGuideJsonReducer",
   "version": "1.0.0",
-  "description": "Northcoders project ",
+  "description": "testing tool ",
   "main": "index.js",
   "scripts": {
-    "test": "mocha spec/"
+    "test": "mocha spec/",
+    "analyze": "node ./bin/jsonDataExtractor.js"
+  },
+  "prettier": {
+    "printWidth": 160,
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "trailingComma": "none"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/northcoders-chris/npm-file-structure.git"
+    "url": "git+https://github.com/petraplatz/SizeGuideJsonReducer.git"
   },
-  "author": "Chris Hill",
-  "license": "ISC",
+  "author": "Riccardo Petracchini",
+  "license": "",
   "bugs": {
-    "url": "https://github.com/northcoders-chris/npm-file-structure/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/northcoders-chris/npm-file-structure#readme",
+  "homepage": "",
   "devDependencies": {
     "mocha": "^2.4.5"
   },
   "dependencies": {
-    "moment": "^2.12.0"
+    "moment": "^2.12.0",
+    "colors": "^1.3.0",
+    "path": "^0.12.7",
+    "code-prettify": "^0.1.0",
+    "prettier": "^1.11.1"
   }
 }
