@@ -1,6 +1,6 @@
 !.gitignore
 #Config
-config.json
+#config.json
 
 # Logs
 logs
