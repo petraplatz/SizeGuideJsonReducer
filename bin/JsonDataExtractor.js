@@ -8,7 +8,7 @@ const getConfig = require('../lib/getConfig'),
 const config = getConfig();
 if (!config) return;
 
-if (config.JSON && config.JSON.folderpath)
+if (config.JSON && config.JSON.folderpath) {
     if (((typeof config.JSON.folderpath != "undefined") &&
             (typeof config.JSON.folderpath.valueOf() == "string")) &&
         (config.JSON.folderpath.length > 0)) {
