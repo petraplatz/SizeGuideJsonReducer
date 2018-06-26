@@ -1,19 +1,19 @@
 "use strict";
 
 const getConfig = require('../lib/getConfig'),
-    jsonExtracted = require("../lib/jsonAnalyze"),
+    jsonAnalyzer = require("../lib/jsonAnalyze"),
     helper = require("../lib/helper"),
     colors = require('colors');
 
 const config = getConfig();
 if (!config) return;
 
-if (config.JSON && config.JSON.folderpath) {
-    if (((typeof config.JSON.folderpath != "undefined") &&
-            (typeof config.JSON.folderpath.valueOf() == "string")) &&
-        (config.JSON.folderpath.length > 0)) {
-        // folder configurato
-        const folder = config.JSON.folderpath;
+if (config.JSON && config.JSON.originfolderpath) {
+    if (((typeof config.JSON.originfolderpath != "undefined") &&
+            (typeof config.JSON.originfolderpath.valueOf() == "string")) &&
+        (config.JSON.originfolderpath.length > 0)) {
+        // folder configuration
+        const folder = config.JSON.originfolderpath;
 
         if (helper.isDirectory(folder)) {
 
@@ -22,7 +22,7 @@ if (config.JSON && config.JSON.folderpath) {
             var JSONfiles = helper.getJSONFiles(folder);
 
             // Go
-            jsonExtracted.analyze(JSONfiles);
+            jsonAnalyzer.analyze(JSONfiles);
         } else {
             //fs.mkdirSync(directory);
             console.log(colors.error(`\n config.json > checking folder path: "${folder}"`));

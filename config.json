@@ -1,6 +1,11 @@
 {
     "JSON": {
-        "folderpath": "please fill this value with your folder"
-
+        "originfolderpath": "c:\\Temp\\measurements",
+        "destinationfolderpath": "c:\\Temp\\measurements2",
+        "blocks": {
+            "headers": false,
+            "measurements": true
+        },
+        "propertyToCheck": "fitting"
     }
 }
