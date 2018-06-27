@@ -3,8 +3,8 @@
         "originfolderpath": "c:\\Temp\\measurements",
         "destinationfolderpath": "c:\\Temp\\measurements2",
         "blocks": {
-            "headers": false,
-            "measurements": true
+            "headers": true,
+            "measurements": false
         },
         "propertyToCheck": "fitting"
     }
